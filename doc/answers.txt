@@ -12,3 +12,6 @@ Q4. What can be a good message for the first commit? What is the current status?
 En nuestro mensage podriamos decir qué archivo estamos modificadno y el momento, para que sea mas claro cuando hagamos mas modificaciones.
 Si miramos el estado ahora, no tendremos archivos esperando "to be committed", ya no estan en el "staging area"
 
+Q5. How many commits there are in the log? What are the first seven digits (letters and numbers) that identify the first README.md commit?
+Solo hemos hecho un commit.
+Github nos devuelve los primero 7 characteres de una cadena de 40 para que identifiquemos el commit, que representa la rama que apunta a una commit y es de hecho el contenido del hash del commit.
