@@ -12,15 +12,3 @@ Q4. What can be a good message for the first commit? What is the current status?
 En nuestro mensage podriamos decir qué archivo estamos modificadno y el momento, para que sea mas claro cuando hagamos mas modificaciones.
 Si miramos el estado ahora, no tendremos archivos esperando "to be committed", ya no estan en el "staging area"
 
-Q5. How many commits there are in the log? What are the first seven digits (letters and numbers) that identify the first README.md commit?
-Solo hemos hecho un commit.
-Github nos devuelve los primero 7 characteres de una cadena de 40 para que identifiquemos el commit, que representa la rama que apunta a una commit y es de hecho el contenido del hash del commit.
-
-Q6. Modify one line of the README.md, add to the staging area and commit. Then use the command git show HEAD, and explain the output.
-Nos mostrara el HEAD commit, que nos mostrara el archivo y las modificaciones que se le han hecho
-
-Q8. Create a new branch called \documents". Use git branch and explain where you are and how many branches you have?
-Nos muestra la lista de ramas que tenemos creadas y nos indica en que rama estamos (con un asterisco)
-
-Q9. Add the file and make a commit with a nice message. What is the content of the README.md in both branches?
-En la rama princiapl aparecerá el README que hemos hecho hace varios apartados, al que le hemos añadido <<, en la rama documents el mismo archivo lo hemos modificado y ahora le hemos puesto un "Hola mundo"
