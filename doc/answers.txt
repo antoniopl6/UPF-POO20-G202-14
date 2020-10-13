@@ -26,5 +26,7 @@ En la rama princiapl aparecerá el README que hemos hecho hace varios apartados,
 
 Q10. Write the answers to the first 5 questions in the answers.txt file of the \master" branch, and write the rest of answers of the same file but in the \documents" branch. In the next step, we have to add and commit both changes in their respective branches. Then move to the \master" branch and merge the \documents" branch. Do you have conflicts? In case there are conflicts, explain how can you solve them. The aim is to finish the merge successfully.
 Hay conflictos, lo que podemos hacer para resolverlos es modificar manualmente los archivos y decidir entonces que cambios dejar y cuales no.
+Hemos resulto de forma manual los conflictos y una vez hecho hemos podido subir la solicitud de Merge y confirmarla. Con los conflictos resultos, hemos podido eliminar la rama documents sin que se pierda nada.
 
-
+Q11. In which branch are you? What branches do you have?
+Una vez eliminada la rama documents, volvemos a nuestra rama principal main, que deberia ser la unica en ese momento (nosotros hemos aprovechado para crear las ramas practicas y seminarios para tener los trabajos organizados para los futuros seminarios y practicas).
