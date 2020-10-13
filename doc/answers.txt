@@ -1,1 +1,8 @@
-respuestas
+Q6. Modify one line of the README.md, add to the staging area and commit. Then use the command git show HEAD, and explain the output.
+Nos mostrara el HEAD commit, que nos mostrara el archivo y las modificaciones que se le han hecho
+
+Q8. Create a new branch called \documents". Use git branch and explain where you are and how many branches you have?
+Nos muestra la lista de ramas que tenemos creadas y nos indica en que rama estamos (con un asterisco)
+
+Q9. Add the file and make a commit with a nice message. What is the content of the README.md in both branches?
+En la rama princiapl aparecerá el README que hemos hecho hace varios apartados, al que le hemos añadido <<, en la rama documents el mismo archivo lo hemos modificado y ahora le hemos puesto un "Hola mundo"
