@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-//package logoprogram;
 
 /**
  *
  * @author Toni
  */
 public class Instruction {
+
     private String code;
     private double param;
 

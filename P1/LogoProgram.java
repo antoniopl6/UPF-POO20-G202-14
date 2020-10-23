@@ -3,11 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package logoprogram;
 
 /**
  *
- * @author Toni
+ * @author Ojitos Rizados
  */
 public class LogoProgram {
 
@@ -16,21 +15,18 @@ public class LogoProgram {
      */
     public static void main(String[] args) {
         Program p = new Program("Square");
-        p.addInstruction( "REP" , 4 ) ;
-        p.addInstruction("FWD" , 100) ;
-        p.addInstruction("ROT" , 90 ) ;
-        p.addInstruction("END" , 1 ) ;
-        p.addInstruction("FWD" , 100) ;
-        if ( p.isCorrect ( )){
-            p.restart( ) ;
+        p.addInstruction("REP", 4);
+        p.addInstruction("FWD", 100);
+        p.addInstruction("ROT", 90);
+        p.addInstruction("END", 1);
+        if (p.isCorrect()) {
+            p.restart();
             while (!p.hasFinished()) {
-                Instruction instr = p.getNextInstruction( ) ;
-                System.out.println( instr.info( ) ) ;
+                Instruction instr = p.getNextInstruction();
+                System.out.println(instr.info());
             }
         }
 
-
-
     }
-    
+
 }

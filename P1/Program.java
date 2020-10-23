@@ -5,11 +5,13 @@
  */
 //package logoprogram;
 import java.util.LinkedList;
+
 /**
  *
  * @author Toni
  */
 public class Program {
+
     private LinkedList<Instruction> instructions;
     private int currentLine;
     private int loopIteration;
@@ -43,7 +45,7 @@ public class Program {
 
     public boolean hasFinished() {
         int nextLine = currentLine + 1;
-        if (nextLine == (instructions.size()) && this.loopIteration == 1){
+        if (nextLine == (instructions.size()) && this.loopIteration == 1) {
             return true;
         }
         return false;
@@ -67,7 +69,7 @@ public class Program {
         }
         currentLine++;
         return instructions.get(currentLine);
-        
+
     }
 
     public boolean isCorrect() {
