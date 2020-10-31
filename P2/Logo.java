@@ -18,6 +18,9 @@ public class Logo {
     public Logo(int w, int h){
         this.height = h;
         this.width = w;
+        //Por defecto, pondremos el tutle en una posicion que sea visible, ya que lo situamos 
+        //en el punto 0,0 empezara en una esquina
+        //Tambien hemos decididio que empieze con su direccion hacia la derecha en horizontal
         t = new Turtle(300,175,1,0);
     }
     public int getWidth(){
@@ -35,6 +38,7 @@ public class Logo {
             p.restart( ) ;
             while (true) {
                 Instruction instruction = p.getCurrentInstruction();
+                //Consideraremos las instrucciones básicas listadas en el seminario 1
                 switch (instruction.getCode()) {
                     case "PEN":
                         if(instruction.getParam() == 1){
