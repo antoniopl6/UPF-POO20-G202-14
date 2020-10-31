@@ -19,7 +19,8 @@ public class LogoWindow extends javax.swing.JFrame {
      */
     public LogoWindow() {
         logo = new Logo(800,600);
-        prog = new Program("Square");
+        //prog = new Program("Square");
+        prog = new Program("Smile");
         prog.addInstruction("ROT" , 90 ) ;
         prog.addInstruction("PEN" , 0) ;
         prog.addInstruction("FWD" , 75) ;
