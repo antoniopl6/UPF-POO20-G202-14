@@ -64,6 +64,9 @@ public class Turtle {
     public void forward(double distance, Graphics g){
         int xOld = x;
         int yOld = y;
+        //Las coordenadas de la direccion seran parte de un circulo
+        //unitario, así que usaremos sus componentes multiplicadas
+        //por la distancia para re calcular la posicion
         this.x = x + (int) (dirX*distance);
         this.y = y + (int) (dirY*distance);
         if (isPenOn() == true){
@@ -71,9 +74,13 @@ public class Turtle {
         }
     }
     public void turn(double a){
+        //Transformamos el angulo (en el enunciado de la practica hay una errata, dice
+        //que cambiemos de radianes a radianes, y que el argumento de esta funcion esta en radianes
+        //pero la instruccion "ROT" indica la rotacion en grados)
+        double angle= a*Math.PI/180;
         double dirXold = dirX;
-        this.dirX = Math.cos(a*Math.PI/180)*dirXold - Math.sin(a*Math.PI/180)*dirY;
-        this.dirY = Math.sin(a*Math.PI/180)*dirXold + Math.cos(a*Math.PI/180)*dirY;
+        this.dirX = Math.cos(angle)*dirXold - Math.sin(angle)*dirY;
+        this.dirY = Math.sin(angle)*dirXold + Math.cos(angle)*dirY;
     }
     public void setPen(boolean on){
         this.pen = on;
