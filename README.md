@@ -1,2 +1,2 @@
 # UPF-POO20-G202-14
-"Hola mundo"
+En los branch, seminarios y practicas se iran subiendo nuestras soluciones a los ejercicios.
