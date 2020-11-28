@@ -84,7 +84,7 @@ public class OnlineStore {
                 aDate = sDate;
             }
         }
-        //Hemos modificado la fecha de la tienda al hacer las tiendas, así que
+        //Hemos modificado la fecha de la tienda al hacer las ventas, así que
         //habrá que devolverlo
         return aDate;
     }
@@ -298,7 +298,13 @@ public class OnlineStore {
         for (int i = 0; i < itemsSold.size(); i++) {
             System.out.println(i + 1 + "-" + itemsSold.get(i).name + ", price: " + itemsSold.get(i).getPrice() + "\n");
         }
-
+        
+        //Para comprobar el funcionamiento de las Sales, se cambia la fecha de la primera Sale,
+        //forzando así a que las fechas de nuestras ventas tengan que ordenarse.
+        c.setTime(actualDate);
+        c.add(Calendar.DATE, 10);
+        Date saleDate = c.getTime();
+        sales.get(0).setSaleDate(saleDate);
         //Sales antes de ser ordenadas
         System.out.println("Lista Sales antes de ser ordenadas");
         for (int i = 0; i < sales.size(); i++) {
