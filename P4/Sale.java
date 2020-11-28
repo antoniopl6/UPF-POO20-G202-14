@@ -16,7 +16,7 @@ import java.util.logging.Logger;
  */
 public class Sale implements Comparable {
 
-    private final Date saleDate;
+    private Date saleDate;
     private Date sendDate;
     private final Buyer buyer;
     private final Item item;
@@ -37,9 +37,9 @@ public class Sale implements Comparable {
     public Date getSaleDate() {
         return saleDate;
     }
-
-    public void setSendDate(Date d) {
-        sendDate = d;
+    
+    public void setSaleDate(Date d) {
+        saleDate = d;
     }
 
     public Date getSendDate() {
