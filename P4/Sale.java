@@ -41,7 +41,9 @@ public class Sale implements Comparable {
     public void setSaleDate(Date d) {
         saleDate = d;
     }
-
+    public void setSendDate(Date d) {
+        sendDate = d;
+    }
     public Date getSendDate() {
         return sendDate;
     }
