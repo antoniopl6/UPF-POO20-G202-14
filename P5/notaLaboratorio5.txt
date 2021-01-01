@@ -1,0 +1,5 @@
+9,5	     9,5	          9,5	      9,5	           9,5 		9,5        9,5
+Clases	Atributos constructor     Métodos       Scope 	            Report	FINAL
+                  y parámetros   y parámetros  (private o públic)
+
+
